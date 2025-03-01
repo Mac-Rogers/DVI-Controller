@@ -21,4 +21,5 @@ Further research determined that the blue channel is responsible for carrying th
 Differential output is required for HDMI transmition, and my original attempt at implementing this in verilog was unsucessful, leading me to discover that a specific primative exists (OBUFDS) for doing just this.
 
 ## Results
-![image](https://github.com/user-attachments/assets/0e0fc61a-faf9-44d4-aad4-83a21b1141df)
+![IMG_8901](https://github.com/user-attachments/assets/a1ebf046-03c4-4adc-8e62-3638740a1b17)
+
