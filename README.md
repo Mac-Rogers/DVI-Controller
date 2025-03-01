@@ -13,11 +13,14 @@ https://tomverbeure.github.io/video_timings_calculator
 
 ## Maximum clk frequency
 Each colour channel (RGB) is 8b/10b encoded, thus each pixel requires 10 clk cycles. The total frame size of a 640x480 resolution is 800x525, so at 60Hz this is:
+
 800 x 525 x 60 x 10 = 252,000,000 clk cycles/s
+
 This requires a system clk of 252Mhz, anything beyond this quickly became too fast for my system without specialised hardware.
 
 ## Control
 Further research determined that the blue channel is responsible for carrying the vsync and hsync signals, and thye must be TDMS encoded in order to eb received correctly. 
+
 Differential output is required for HDMI transmition, and my original attempt at implementing this in verilog was unsucessful, leading me to discover that a specific primative exists (OBUFDS) for doing just this.
 
 ## Results
