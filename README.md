@@ -19,3 +19,6 @@ This requires a system clk of 252Mhz, anything beyond this quickly became too fa
 ## Control
 Further research determined that the blue channel is responsible for carrying the vsync and hsync signals, and thye must be TDMS encoded in order to eb received correctly. 
 Differential output is required for HDMI transmition, and my original attempt at implementing this in verilog was unsucessful, leading me to discover that a specific primative exists (OBUFDS) for doing just this.
+
+## Results
+![image](https://github.com/user-attachments/assets/0e0fc61a-faf9-44d4-aad4-83a21b1141df)
