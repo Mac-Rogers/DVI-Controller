@@ -20,7 +20,7 @@ Each colour channel (RGB) is 8b/10b encoded, thus each pixel requires 10 clk cyc
 This requires a system clk of 252Mhz, anything beyond this quickly became too fast for my system without specialised hardware.
 
 ## Step 4 - Control
-Further research determined that the blue channel is responsible for carrying the vsync and hsync signals, and thye must be TDMS encoded in order to eb received correctly. 
+Further research determined that the blue channel is responsible for carrying the vsync and hsync signals, and they must be TDMS encoded in order to be received correctly. 
 
 Differential output is required for HDMI transmition, and my original attempt at implementing this in verilog was unsucessful, leading me to discover that a specific primative exists (OBUFDS) for doing just this.
 
